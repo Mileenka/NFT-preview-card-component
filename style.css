@@ -1,0 +1,246 @@
+:root
+{
+--SoftBlue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--DarkBlueMain: hsl(217, 54%, 11%);
+--DarkBlueCard: hsl(216, 50%, 16%);
+--DarkBlueLine: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{   
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--DarkBlueMain);
+    font-family:  'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section
+{ 
+    position: relative;
+    width: 350px;
+    height: 595px;
+    background-color: var(--DarkBlueCard);
+    border-radius: 15px;
+    box-shadow: 2px 7px 25px 41px hsl(217, 53%, 9%);
+}
+
+img
+{
+    margin: 25px 25px 20px 25px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.square
+{
+  position: absolute;
+  width:299px;
+  height: 299px;
+  background-color: var(--Cyan);
+  border-radius: 11px;
+  margin: -325px 25px 20px 25px;
+  opacity: 0;
+}
+
+.view img
+{
+    width: 50px;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    opacity: 0;
+}
+.hover:hover .square
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.hover:hover .view img
+{
+    cursor: pointer;
+    opacity: 1;
+}
+
+h1
+{
+    margin-left: 25px;
+    color: var(--White);
+    font-size: 22px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin: 20px 0 0 25px;
+    color: var(--SoftBlue);
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 27px;
+}
+
+.points
+{
+    margin: 25px 0 0 25px;
+    color: var(--Cyan);
+    font-size: 16px;
+}
+
+.days
+{
+    margin: -20px 0px 0 230px;
+    color: var(--SoftBlue);
+    font-size: 16px;
+}
+
+.spacer
+{
+    margin: 25px;
+    background-color: hsla(215, 51%, 70%,0.2);
+    height: 1px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+
+.avatar
+{
+    top: 510px;
+    position: absolute;
+    width: 33px;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+}
+
+
+.author, .name
+{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    left: 75px;
+    bottom: 3px;
+}
+    
+.author
+{
+    color: var(--SoftBlue);
+    font-size: 16px;
+    
+   
+}
+
+.name a
+{
+    color: var(--White);
+}
+
+
+.attribution 
+{
+    margin-top: 60px;
+    font-size: 16px; 
+    text-align: center; 
+    color: hsl(224, 61%, 81%);
+}
+    
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+h1:hover, .name a:hover
+{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+@media all and (max-width:600px)
+{
+section 
+{
+    width: 330px;
+    height: 540px;
+}
+
+img 
+{
+    width: 280px;
+}
+
+.square
+{
+    width:280px;
+    height: 280px;
+    top: 350px;
+}
+
+.attribution
+{
+    display: none;
+}
+
+h1
+{
+    margin-top: -5px;
+    font-size: 22px;
+}
+
+h2
+{
+    margin-top: 12px;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.points
+{
+    margin: 17px 0 0 25px;
+    font-size: 16px;
+}
+
+.days
+{
+    margin: -20px 0px 0 210px;
+    font-size: 16px;
+}
+.spacer
+{
+    margin: 15px 20px;
+    width: 290px;
+}
+
+
+.avatar
+{
+    top: 460px;
+}
+
+
+.author, .name
+{
+    margin: 0;
+    left: 76px;
+    bottom: -3px;
+}
+    
+}
