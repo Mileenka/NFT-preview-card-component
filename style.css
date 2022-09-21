@@ -29,57 +29,61 @@ body
 
 section
 { 
+    margin: 1.25rem;
     position: relative;
-    width: 350px;
-    height: 595px;
+    width: 21.8rem;
+    height: 37.1rem;
     background-color: var(--DarkBlueCard);
-    border-radius: 15px;
-    box-shadow: 2px 7px 25px 41px hsl(217, 53%, 9%);
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.4rem 1.5rem 2.5rem hsl(217, 53%, 9%);
 }
 
 img
 {
-    margin: 25px 25px 20px 25px;
-    width: 300px;
-    border-radius: 10px;
+    margin: 1.5rem 1.5rem 1.25rem 1.5rem;
+    width: 18.7rem;
+    border-radius: 0.5rem;
 }
 
 .square
 {
   position: absolute;
-  width:299px;
-  height: 299px;
+  width:18.6rem;
+  height: 18.7rem;
   background-color: var(--Cyan);
-  border-radius: 11px;
-  margin: -325px 25px 20px 25px;
+  border-radius: 0.5rem;
+  margin: -20.3rem 1.5rem 1.25rem 1.5rem;
   opacity: 0;
 }
 
 .view img
 {
-    width: 50px;
+    width: 3rem;
     position: absolute;
-    top: 125px;
-    left: 125px;
+    top: 7.8rem;
+    left: 7.8rem;
     opacity: 0;
 }
+
 .hover:hover .square
 {
     cursor: pointer;
     opacity: 0.5;
+    transition: all ease-in 0.7s
 }
 
 .hover:hover .view img
 {
     cursor: pointer;
     opacity: 1;
+    transition: all ease-in 0.7s;
 }
 
 h1
 {
-    margin-left: 25px;
+    margin-left: 1.5rem;
     color: var(--White);
-    font-size: 22px;
+    font-size: 1.33rem;
 }
 
 a
@@ -89,63 +93,59 @@ a
 
 h2
 {
-    margin: 20px 0 0 25px;
+    margin: 1.25rem 0 0 1.5rem;
     color: var(--SoftBlue);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: lighter;
-    line-height: 27px;
+    line-height: 1.7rem;
 }
 
 .points
 {
-    margin: 25px 0 0 25px;
+    margin: 1.5rem 0 0 1.5rem;
     color: var(--Cyan);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .days
 {
-    margin: -20px 0px 0 230px;
+    margin: -1.25rem 0rem 0 14.375rem;
     color: var(--SoftBlue);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .spacer
 {
-    margin: 25px;
+    margin: 1.4rem;
     background-color: hsla(215, 51%, 70%,0.2);
-    height: 1px;
-    width: 300px;
+    height: 0.06rem;
+    width: 18.7rem;
     border-radius: 100%;
 }
 
-
 .avatar
 {
-    top: 510px;
+    top: 31.9rem;
     position: absolute;
-    width: 33px;
-    border: 1px solid var(--White);
-    border-radius: 20px;
+    width: 2.06rem;
+    border: 0.06rem solid var(--White);
+    border-radius: 1.25rem;
 }
-
 
 .author, .name
 {
+    margin-top: -0.8rem;
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: lighter;
-    left: 75px;
-    bottom: 3px;
+    left: 4.6rem;
+    bottom: 0.18rem;
 }
     
 .author
 {
-    color: var(--SoftBlue);
-    font-size: 16px;
-    
-   
+    color: var(--SoftBlue); 
 }
 
 .name a
@@ -153,11 +153,10 @@ h2
     color: var(--White);
 }
 
-
 .attribution 
 {
-    margin-top: 60px;
-    font-size: 16px; 
+    margin-top: 3.75rem;
+    font-size: 1rem; 
     text-align: center; 
     color: hsl(224, 61%, 81%);
 }
@@ -172,26 +171,27 @@ h1:hover, .name a:hover
 {
     cursor: pointer;
     color: var(--Cyan);
+    transition: all ease-in 0.5s;
 }
 
-@media all and (max-width:600px)
+@media all and (max-width:500px)
 {
 section 
 {
-    width: 330px;
-    height: 540px;
+    width: 20.6rem;
+    height: 33.7rem;
 }
 
 img 
 {
-    width: 280px;
+    width: 17.5rem;
 }
 
 .square
 {
-    width:280px;
-    height: 280px;
-    top: 350px;
+    width: 17.5rem;
+    height: 17.5rem;
+    top: 21.875rem;
 }
 
 .attribution
@@ -201,46 +201,43 @@ img
 
 h1
 {
-    margin-top: -5px;
-    font-size: 22px;
+    margin-top: -0.31rem;
+    font-size: 1.37rem;
 }
 
 h2
 {
-    margin-top: 12px;
-    line-height: 26px;
-    font-size: 16px;
+    margin-top: 0.75rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
 }
 
 .points
 {
-    margin: 17px 0 0 25px;
-    font-size: 16px;
+    margin: 1rem 0 0 1.5rem;
+    font-size: 1rem;
 }
 
 .days
 {
-    margin: -20px 0px 0 210px;
-    font-size: 16px;
+    margin: -1.25rem 0rem 0 13.125rem;
+    font-size: 1rem;
 }
 .spacer
 {
-    margin: 15px 20px;
-    width: 290px;
+    margin: 0.9375rem 1.25rem;
+    width: 18.125rem;
 }
-
 
 .avatar
 {
-    top: 460px;
+    top: 28.8rem;
 }
-
 
 .author, .name
 {
-    margin: 0;
-    left: 76px;
-    bottom: -3px;
+    margin-top: 0.2rem;
+    left: 4.5rem;
+    bottom: -0.1875rem;
 }
-    
-}
+    }
